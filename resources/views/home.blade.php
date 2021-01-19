@@ -14,9 +14,11 @@
         <p>{{ $testo }}</p>
         <ul>
             @foreach ($dresses as $dress)
-                <li>{{ $dress->colore }}</li>
-                <li>{{ $dress->taglia }}</li>
-                <li>{{ $dress->prezzo }}</li>
+                <div class="card">
+                    <li>{{ $dress->colore }}</li>
+                    <li>{{ $dress->taglia }}</li>
+                    <li>{{ $dress->prezzo }}</li>
+                </div>
             @endforeach
         </ul>
     </body>

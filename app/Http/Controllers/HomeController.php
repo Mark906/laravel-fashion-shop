@@ -9,7 +9,7 @@ class HomeController extends Controller
     public function index(){
         $all_product = Dress::all();
         $data = [
-            'testo' => 'Questa è la homepage.'
+            'testo' => 'Questa è la homepage.',
             'dresses' => $all_product
         ];
         return view('home', $data);
